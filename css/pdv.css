@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #2F2841;
+    font-family: poppins, sans-serif;
+}
+.container{
+    display: grid;
+    /*grid-template-columns: 100fr 100fr;*/
+    grid-template-rows: 10vh 12vh 70vh 5vh;
+    grid-template-areas: "h h" "m m" "l a" "f f";
+}
+header{
+    background: #161616;
+    grid-area: h;
+    position: relative;
+
+}
+.logo{
+    height: 8vh;
+    padding: 7px 0px 5px 20px;
+    margin: 0px 0px 5px 0px;
+}
+.relogio{
+    position: absolute;
+    top: 3vh;
+    left: 47vw;
+    color: white;
+    display: flex;
+}
+.sair{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+
+}
+main{
+    background: rgb(0, 0, 146);
+    grid-area: m;
+}
+.inp_produto{
+    background: #f3f3f3;
+    border-radius: 5px;
+    width: 99vw;
+    height: 40px;
+    outline: none;
+    font-size: 12pt;
+}
+.leg_prod{
+    font-size: 15px;
+    color: white;
+}
+aside{
+    background: #e0dddd;
+    grid-area: a;
+}
+.lista{
+    color: black;
+    position: relative;
+    height: 50vh;
+    
+}
+.tabela{
+    height: 50vh;
+    width: 60vw;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    border-collapse: collapse;
+    background-color: #c2c2c2;
+}
+
+th{
+    background-color: #2F2841;
+    color: white;
+    height: 50px;
+    
+}
+td{
+    border-bottom: 1px solid #424242;
+    text-align: center;
+}
+.des{
+    text-align: left;
+}
+
+button{
+    background-color: rgb(172, 162, 162);
+    border-radius: 6px;
+    
+}
+.btn_lista{
+    background: red;
+    cursor: pointer;
+    color:white; 
+    border: none;
+}
+.total{
+    align-content:end;
+    background-color: orangered;
+    border-radius: 5px;
+    position: absolute;
+    height: 40px;
+    width: auto;
+    left: 5px;
+    right: 5px;
+    bottom: -70px;
+}
+.total1{
+    text-align: left;
+    font-size: 28px;
+    font-family: sans-serif;
+    padding: 7px;
+    color: white;
+    
+}
+.totalValor{
+    text-align: right;
+    font-size: 28px;
+    font-family: sans-serif;
+    padding: 7px;
+    color: white;
+}
+
+.BTN_pagamento{
+    position: absolute;
+    border-radius: 10px;
+    padding: 2px 30px;
+    height: 40px;
+    width: 48%;
+    background: rgb(0, 153, 0);
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px rgb(0, 255, 34);
+    color: white;
+    border: none;
+    right: 5px;
+    bottom: -120px;
+}
+.BTN_cancelar{
+    position: absolute;
+    border-radius: 10px;
+    padding: 2px 30px;
+    height: 40px;
+    width: 48%;
+    background: rgb(192, 0, 0);
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px rgb(255, 0, 0);
+    color: white;
+    border: none;
+    left: 5px;
+    bottom: -120px;
+}
