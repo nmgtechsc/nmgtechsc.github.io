@@ -84,14 +84,17 @@ include_once('pesquisaproduto_api.php');
                       ?>
                     </tbody>
                     
-                  </table>
+                </table>
+            
                 <div class="total">
                     <label class="total1">Total</label>
                     <label class="totalValor">R$115,00</label>
                 </div>
+                
                     <button class="BTN_cancelar" type="submit">CANCELAR(F8)</button>
                     <button class="BTN_pagamento" type="submit">PAGAMENTO(F12)</button>   
-                </div>
+                
+            </div>
         </aside>
     </div>
     <script src="script.js"></script>

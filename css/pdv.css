@@ -9,7 +9,7 @@ html, body{
 }
 .container{
     display: grid;
-    /*grid-template-columns: 100fr 100fr;*/
+    grid-template-columns: 40fr 60fr;
     grid-template-rows: 10vh 12vh 70vh 5vh;
     grid-template-areas: "h h" "m m" "l a" "f f";
 }
@@ -43,12 +43,14 @@ header{
 main{
     background: rgb(0, 0, 146);
     grid-area: m;
+    
 }
 .inp_produto{
     background: #f3f3f3;
     border-radius: 5px;
-    width: 99vw;
+    width: 97vw;
     height: 40px;
+    margin: 5px;
     outline: none;
     font-size: 12pt;
 }
@@ -59,21 +61,29 @@ main{
 aside{
     background: #e0dddd;
     grid-area: a;
+    
 }
 .lista{
     color: black;
     position: relative;
-    height: 50vh;
+    height: 60vh;
+    overflow: auto;
+    
+    
+    
     
 }
 .tabela{
-    height: 50vh;
+    height: 10vh;
     width: 60vw;
     margin: 5px;
     padding: 5px;
     border-radius: 10px;
     border-collapse: collapse;
     background-color: #c2c2c2;
+    
+    
+    
 }
 
 th{
